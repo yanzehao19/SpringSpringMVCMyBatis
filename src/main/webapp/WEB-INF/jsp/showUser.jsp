@@ -2,10 +2,18 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">  
 <html>  
   <head>  
-    <title>测试</title>  
+    <title>test</title>  
+    <script>
+    function displayDate(){
+    	document.getElementById("demo").innerHTML=Date();
+    }
+    </script>
   </head>  
     
   <body>  
-    ${user.userName}  
+    ${user.userName} 
+    <p id="demo">this is a paragraph</p>
+    <button type="button" onclick="displayDate()">displayDate</button>
+    
   </body>  
 </html>  

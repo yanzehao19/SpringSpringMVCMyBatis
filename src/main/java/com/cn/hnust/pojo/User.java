@@ -3,7 +3,7 @@ package com.cn.hnust.pojo;
 public class User {
 	private Integer id;
 
-	private String userName;
+	private String name;
 
 	private String password;
 
@@ -18,11 +18,11 @@ public class User {
 	}
 
 	public String getUserName() {
-		return userName;
+		return name;
 	}
 
-	public void setUserName(String userName) {
-		this.userName = userName == null ? null : userName.trim();
+	public void setUserName(String name) {
+		this.name = name == null ? null : name.trim();
 	}
 
 	public String getPassword() {

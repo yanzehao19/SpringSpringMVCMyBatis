@@ -8,7 +8,6 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
-import com.cn.hnust.pojo.User;
 import com.cn.hnust.service.IUserService;
 
 @Controller

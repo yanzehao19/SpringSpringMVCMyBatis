@@ -13,6 +13,8 @@
 
 	<!-- 自动扫描 -->
 	<context:component-scan base-package="com.cn.hnust" />
+	 <!-- 自动扫描(自动注入) -->  
+    <context:component-scan base-package="com.cn.*.service" /> 
 	<!-- 引入配置文件 -->
 	<bean id="propertyConfigurer"
 		class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">

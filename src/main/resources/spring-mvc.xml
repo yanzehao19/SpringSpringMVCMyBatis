@@ -13,19 +13,15 @@
 
 
 	<mvc:annotation-driven>
-		<mvc:message-converters>
-			<bean
-				class="org.springframework.http.converter.ByteArrayHttpMessageConverter" />
-			<bean class="org.springframework.http.converter.FormHttpMessageConverter" />
-			<bean
-				class="org.springframework.http.converter.xml.SourceHttpMessageConverter" />
-			<!--<bean class="org.springframework.http.converter.json.MappingJacksonHttpMessageConverter" 
-				/> -->
-			<bean
-				class="com.alibaba.fastjson.support.spring.FastJsonHttpMessageConverter" />
-		</mvc:message-converters>
-	</mvc:annotation-driven>
-	<mvc:default-servlet-handler />
+        <mvc:message-converters>
+            <bean class="org.springframework.http.converter.ByteArrayHttpMessageConverter" />
+            <bean class="org.springframework.http.converter.FormHttpMessageConverter" />
+            <bean class="org.springframework.http.converter.xml.SourceHttpMessageConverter" />
+            <!--<bean class="org.springframework.http.converter.json.MappingJacksonHttpMessageConverter" />-->
+            <bean class="com.alibaba.fastjson.support.spring.FastJsonHttpMessageConverter" />
+        </mvc:message-converters>
+    </mvc:annotation-driven>
+    <mvc:default-servlet-handler /> 
 	<!-- 自动扫描该包，使SpringMVC认为包下用了@controller注解的类是控制器 -->
 	<context:component-scan base-package="com.cn.hnust">
 		<context:include-filter type="annotation"

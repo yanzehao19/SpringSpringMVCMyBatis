@@ -10,7 +10,6 @@ import org.springframework.stereotype.Repository;
 
 import com.cn.hnust.pojo.User;
 
-@Repository  
 public interface IUserDao {
 
 	int deleteByPrimaryKey(Integer id);
@@ -25,5 +24,5 @@ public interface IUserDao {
 
 	int updateByPrimaryKey(User record);
 
-	List<User> selectId(@Param(value="userName") String userName);
+	List<User> selectId( String userName);
 }
